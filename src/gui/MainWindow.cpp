@@ -2116,9 +2116,7 @@ void MainWindow::RecreateMenu()
 	else
 	{
 		// add 'Stop emulation' menu entry to file menu
-#ifdef CEMU_DEBUG_ASSERT
 		m_fileMenu->Append(MAINFRAME_MENU_ID_FILE_END_EMULATION, _("Stop emulation"));
-#endif
 	}
 
 	m_fileMenu->Append(MAINFRAME_MENU_ID_FILE_OPEN_CEMU_FOLDER, _("&Open Cemu folder"));
