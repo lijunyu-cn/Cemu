@@ -138,7 +138,7 @@ option(ENABLE_WXWIDGETS "Build with wxWidgets UI (Currently required)" ON)
 
 set(THREADS_PREFER_PTHREAD_FLAG true)
 find_package(Threads REQUIRED)
-find_package(SDL2 REQUIRED)
+find_package(SDL3 REQUIRED CONFIG REQUIRED COMPONENTS SDL3)
 find_package(CURL REQUIRED)
 find_package(pugixml REQUIRED)
 find_package(RapidJSON REQUIRED)
